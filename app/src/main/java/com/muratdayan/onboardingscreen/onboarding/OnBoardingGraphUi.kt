@@ -3,6 +3,7 @@ package com.muratdayan.onboardingscreen.onboarding
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -21,20 +22,20 @@ import androidx.compose.ui.unit.sp
 fun OnBoardingGraphUi(onBoardingModel: OnBoardingModel) {
 
     Column(
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier.fillMaxSize()
     ) {
-        Spacer(modifier = Modifier.size(50.dp))
+        Spacer(modifier = Modifier.size(90.dp))
 
         Image(
             painter = painterResource(id = onBoardingModel.image),
             contentDescription = null,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(50.dp, 0.dp),
+                .padding(20.dp, 0.dp),
             alignment = Alignment.Center
         )
 
-        Spacer(modifier = Modifier.size(50.dp))
+        Spacer(modifier = Modifier.size(70.dp))
 
         Text(
             text = onBoardingModel.title,
