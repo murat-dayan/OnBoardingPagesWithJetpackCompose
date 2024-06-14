@@ -2,4 +2,11 @@
 <resources>
 
     <style name="Theme.OnBoardingScreen" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="SplashTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_love</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.OnBoardingScreen</item>
+    </style>
 </resources>
